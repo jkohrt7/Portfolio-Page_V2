@@ -6,73 +6,96 @@
     <title>Document</title>
     <link rel = "stylesheet" href = "styles.css">
 </head>
-<body>
+
+<body class = "text-black-700 font-body">
+
     <!--content wrapper-->
-    <div>
-        <div> <!--Start nav-->
-            <nav>
-                <div>
-                    <h1>
-                        <a href="/">Food Ninja</a>
-                    </h1>
-                </div>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <span>Home</span>
+        <nav class = "bg-purple-900"> 
+            <div class = "px-8 mx-auto"> 
+                <div class = "flex justify-between align-center">     
+                    
+                    <!--Logo-->
+                    <div class = "flex">
+                        <a class = "flex items-center space-x-4" href = "#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+                            </svg>
+                            <span class = "font-mono text-3xl text-white font-extrabold">JK</span>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>Github</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div> <!--End nav-->
+                    </div>
+                    <!--Primary nav-->
+                    <div class = "hidden text-white text-lg md:flex items-center space-x-6 py-2 px-3">
+                        
+                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800" href="#">About</a>
+                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800" href="#">Portfolio</a>
+                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800" href="#">Contact</a>
+                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800" href="#">Github</a>
 
-        <main>
-            <div>
-                <a href="#">Log in</a>
-                <a href="#">Sign Up</a>
-            </div>
+                    </div>
 
-            <header>
-                <h2>Recipes</h2>
-                <h3>For Ninjas</h3>
-            </header>
-
-            <div>
-                <h4>Latest Recipes</h4>
-                <div>
-                    <!--Cards go here-->
-                    <div>
-                        <img src="" alt="">
-                        <div>
-                            <span>5 Bean Chili Stew</span>
-                            <span>Recipe by mario</span>
-                        </div>
+                    <!--Mobile nav. TODO: add JS functionality-->
+                    <div class = "flex text-white md:hidden items-center space-x-3 py-2 px-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
                     </div>
                 </div>
-            
-
-                <h4>Most Popular</h4>
-
-                <div>
-                    <!--cards go here-->
-                </div>
-
-                <div>
-                    <div>Load More</div>
-                </div>
-
             </div>
+        </nav> 
+
+        <header class = "grid-rows-2 gap-4 bg-purple-800 text-white py-10 ">
+            <h2 class = "text-center text-6xl py-5">Welcome!</h2>
+            <h3 class = "text-center text-xl">I'm Jared Kohrt, a full-stack web developer.</h3>
+        </header>
+
+        <main class = "flex flex-col justify-center">
+
+            <!--About me-->
+            <div id = "about-me" class = "flex flex-col my-12 mx-24 lg:flex-row">
+                <div class = "flex-auto flex-col flex-grow-2 max-w-5xl max-w-xl">
+                    <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2">About Me</h1>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, perferendis reprehenderit. Quasi porro ab, consequuntur reprehenderit officia nisi expedita eaque explicabo earum, corrupti amet dignissimos placeat labore pariatur facere. Quasi!</span>
+                </div>
+
+                <div id="Skills" class = "flex-auto min-w-max md:max-w-md max-w-xl">
+                    <div class = "grid gap-6 p-6 grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 md:gap-12 md:p-12">
+                        <img class = "m-auto h-12 md:h-24 " src="img/javascript.png" alt="A Javascript Logo">
+                        <img class = "m-auto h-12 md:h-24 " src="img/CSS.png" alt="A CSS logo">
+                        <img class = "m-auto h-12 md:h-24 " src="img/tailwind.png" alt="A Tailwind logo">
+                        <img class = "m-auto h-12 md:h-24 " src="img/html-5.png" alt="A HTML5 logo">
+                        <img class = "m-auto h-12 md:h-24 " src="img/R-logo.png" alt="An R logo">
+                        <img class = "m-auto h-12 md:h-24 " src="img/c-sharp.png" alt="A C# logo">
+                    </div> 
+                </div>
+            </div>
+
+            <!--Portfolio-->
+            <div id = "portfolio" class = "flex flex-col my-12 mx-24">
+                <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2 text-center">Portfolio</h1>
+                <!--Cards go in this div-->
+                <div id = "Portfolio-cards" class = "flex flex-row my-12 mx-16">
+                    <!--Quiz-->
+                    <div class = "rounded-3xl overflow-hidden shadow-md">
+                        <a href = "https://jkohrt7.github.io/Javascript_Quiz/" class="text-center">
+                            <img class = "w-full" src = "img/quiz.png">
+                        </a>
+                        <span class = "bg-white m-4 p-24 font-bold align-middle">Javascript Quiz</span>
+                    </div>
+
+                    <!--Weather-->
+                    <a href = "https://jkohrt7.github.io/Weather-Dashboard/" class="shadow-md text-center h-36 w-48 mr-12">
+                        <img class = "w-full" src = "img/quiz.png">
+                        <span class = "m-4 font-bold">Javascript Quiz</span>
+                    </a>
+                    <!--Travel-->
+                    <a href = "https://jkohrt7.github.io/THREE.js_Solar-System/" class="shadow-md text-center h-36 w-48 mr-12">
+                        <img class = "w-full" src = "img/quiz.png">
+                        <span class = "m-4 font-bold">Javascript Quiz</span>
+                    </a>
+                </div>
+            </div>
+
         </main>
-    </div>
+
 </body>
 </html>
