@@ -7,7 +7,7 @@
     <link rel = "stylesheet" href = "styles.css">
 </head>
 
-<body class = "text-black-700 font-body">
+<body class = "text-black-700 bg-gray-200 font-body">
 
     <!--content wrapper-->
         <nav class = "bg-purple-900"> 
@@ -61,7 +61,7 @@
                     <div class = "grid gap-6 p-6 grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 md:gap-12 md:p-12">
                         <img class = "m-auto h-12 md:h-24 " src="img/javascript.png" alt="A Javascript Logo">
                         <img class = "m-auto h-12 md:h-24 " src="img/CSS.png" alt="A CSS logo">
-                        <img class = "m-auto h-12 md:h-24 " src="img/tailwind.png" alt="A Tailwind logo">
+                        <img class = "m-auto h-12 md:h-24 " src="img/java.png" alt="A Java logo">
                         <img class = "m-auto h-12 md:h-24 " src="img/html-5.png" alt="A HTML5 logo">
                         <img class = "m-auto h-12 md:h-24 " src="img/R-logo.png" alt="An R logo">
                         <img class = "m-auto h-12 md:h-24 " src="img/c-sharp.png" alt="A C# logo">
@@ -73,25 +73,37 @@
             <div id = "portfolio" class = "flex flex-col my-12 mx-24">
                 <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2 text-center">Portfolio</h1>
                 <!--Cards go in this div-->
-                <div id = "Portfolio-cards" class = "flex flex-row my-12 mx-16">
+                <div id = "Portfolio-cards" class = "flex flex-row flex-wrap justify-center my-12 mx-0 md:mx-16 ">
+
                     <!--Quiz-->
-                    <div class = "rounded-3xl overflow-hidden shadow-md">
-                        <a href = "https://jkohrt7.github.io/Javascript_Quiz/" class="text-center">
-                            <img class = "w-full" src = "img/quiz.png">
+                    <div class = "rounded-3xl overflow-hidden shadow-md md:mr-12 mb-12">
+                        <a href = "https://jkohrt7.github.io/Javascript_Quiz/">
+                            <img class = "w-80 h-48 object-cover" src = "img/quiz.png">
+                            <div class = "m-4 font-bold text-center text-xl">
+                                <span>Javascript Quiz</span>
+                            </div>
                         </a>
-                        <span class = "bg-white m-4 p-24 font-bold align-middle">Javascript Quiz</span>
                     </div>
 
                     <!--Weather-->
-                    <a href = "https://jkohrt7.github.io/Weather-Dashboard/" class="shadow-md text-center h-36 w-48 mr-12">
-                        <img class = "w-full" src = "img/quiz.png">
-                        <span class = "m-4 font-bold">Javascript Quiz</span>
-                    </a>
+                    <div class = "rounded-3xl overflow-hidden shadow-md md:mr-12 mb-12">
+                        <a href = "https://jkohrt7.github.io/Weather-Dashboard/">
+                            <img class = "w-80 h-48 object-cover" src = "img/sky.jpg">
+                            <div class = "m-4 font-bold text-center text-xl">
+                                <span>OpenWeather App</span>
+                            </div>
+                        </a>
+                    </div>
+
                     <!--Travel-->
-                    <a href = "https://jkohrt7.github.io/THREE.js_Solar-System/" class="shadow-md text-center h-36 w-48 mr-12">
-                        <img class = "w-full" src = "img/quiz.png">
-                        <span class = "m-4 font-bold">Javascript Quiz</span>
-                    </a>
+                    <div class = "rounded-3xl overflow-hidden shadow-md md:mr-12 mb-12">
+                        <a href = "https://jkohrt7.github.io/THREE.js_Solar-System/">
+                            <img class = "w-80 h-48 object-cover" src = "img/solar.jpg">
+                            <div class = "m-4 font-bold text-center text-xl">
+                                <span>Solar System</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
 
