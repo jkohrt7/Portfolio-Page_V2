@@ -11,6 +11,9 @@ module.exports = {
       },
       minWidth: {
         "20": "20px"
+      },
+      backgroundImage: {
+        'hero-pattern': "url('img/endless-constellation.svg')"
       }
     },
   },

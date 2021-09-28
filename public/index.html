@@ -10,7 +10,7 @@
 <body class = "text-black-700 bg-gray-200 font-body">
 
     <!--content wrapper-->
-        <nav class = "bg-purple-900"> 
+        <nav id= "navbar" class = "sticky -my-8 pt-2 top-0 z-50 bg-opacity-0 bg-purple-900 transition ease-in duration-100"> 
             <div class = "px-8 mx-auto"> 
                 <div class = "flex justify-between align-center">     
                     
@@ -34,16 +34,25 @@
                     </div>
 
                     <!--Mobile nav. TODO: add JS functionality-->
-                    <div class = "flex text-white md:hidden items-center space-x-3 py-2 px-3">
+                    <div id= "hamburger-menu-icon" class = "flex text-white cursor-pointer md:hidden items-center space-x-3 py-2 px-3">
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </div>
+
+                    <div id = "mobile-menu" class = "hidden md:hidden">
+                        <a href="#">About</a>
+                        <a href="#">Portfolio</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Github</a>
+                    </div>
+
                 </div>
             </div>
         </nav> 
 
-        <header class = "grid-rows-2 gap-4 bg-purple-800 text-white py-10 ">
+        <header class = "grid-rows-2 gap-4 bg-hero-pattern text-white py-32">
+            <!-- background by SVGBackgrounds.com -->
             <h2 class = "text-center text-6xl py-5">Welcome!</h2>
             <h3 class = "text-center text-xl">I'm Jared Kohrt, a full-stack web developer.</h3>
         </header>
@@ -51,7 +60,7 @@
         <main class = "flex flex-col justify-center">
 
             <!--About me-->
-            <div id = "about-me" class = "flex flex-col my-12 mx-24 lg:flex-row">
+            <section id = "about-me" class = "flex flex-col my-12 mx-24 lg:flex-row">
                 <div class = "flex-auto flex-col flex-grow-2 max-w-5xl max-w-xl">
                     <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2">About Me</h1>
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, perferendis reprehenderit. Quasi porro ab, consequuntur reprehenderit officia nisi expedita eaque explicabo earum, corrupti amet dignissimos placeat labore pariatur facere. Quasi!</span>
@@ -67,10 +76,10 @@
                         <img class = "m-auto h-12 md:h-24 " src="img/c-sharp.png" alt="A C# logo">
                     </div> 
                 </div>
-            </div>
+            </section>
 
             <!--Portfolio-->
-            <div id = "portfolio" class = "flex flex-col my-12 mx-24">
+            <section id = "portfolio" class = "flex flex-col my-12 mx-24">
                 <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2 text-center">Portfolio</h1>
                 <!--Cards go in this div-->
                 <div id = "Portfolio-cards" class = "flex flex-row flex-wrap justify-center my-12 mx-0 md:mx-16 ">
@@ -105,9 +114,43 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </section>
 
+            <!--Contact-->
+            <section class = "flex flex-col my-12 mx-24">
+                <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2 text-center">Contact</h1>
+                <div class = "flex flex-col justify-center md:flex-row ">
+                    <div class= "flex justify-center">
+                        <img class = "text-center rounded-full h-72 p-4" src="img/Jared_kohrt_picture.jpg" alt="A picture of Jared--pasty with brown hair and glasses">
+                    </div>
+
+                    <form class = "grid grid-cols-2 gap-4 p-6">
+                        <input class = "rounded-lg p-2" type = "text" id = "fname" name = "fname" placeholder="First Name">
+                        <input class = "rounded-lg p-2" type = "text" id = "lname" name = "lname" placeholder="Last Name">
+                        <input class = "rounded-lg col-span-2 p-2" type = "email" id = "email" name = "email" placeholder="example@email.com">
+                        <textarea class = "rounded-lg col-span-2 h-28 resize-y p-2" placeholder = "Message"></textarea>
+                    </form>
+                </div>
+            </section>
         </main>
 
+        <footer>
+            <section class = "flex flex-row justify-center align-middle h-16 bg-purple-800 p-2">
+
+                <a href="https://github.com/jkohrt7">
+                    <img class = "h-11 mx-6" src="img/github.svg" alt="github icon">
+                </a>
+                
+                <a href="https://www.linkedin.com/in/jared-kohrt-85029a19a/">
+                    <img class = "h-11 mx-6" src="img/linkedin.svg" alt="the linkedin icon">
+                </a>
+
+            </section>
+
+
+        </footer>
+
 </body>
+
+<script src="js/main.js"></script>
 </html>

@@ -6856,6 +6856,10 @@ video {
   min-width: 0px;
 }
 
+.min-w-20{
+  min-width: 20px;
+}
+
 .min-w-full{
   min-width: 100%;
 }
@@ -17844,6 +17848,10 @@ video {
 
 .bg-gradient-to-tl{
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+
+.bg-hero-pattern{
+  background-image: url('img/endless-constellation.svg');
 }
 
 .from-transparent{
@@ -38685,6 +38693,10 @@ video {
     min-width: 0px;
   }
 
+  .sm\:min-w-20{
+    min-width: 20px;
+  }
+
   .sm\:min-w-full{
     min-width: 100%;
   }
@@ -49607,6 +49619,10 @@ video {
 
   .sm\:bg-gradient-to-tl{
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .sm\:bg-hero-pattern{
+    background-image: url('img/endless-constellation.svg');
   }
 
   .sm\:from-transparent{
@@ -70092,6 +70108,10 @@ video {
     min-width: 0px;
   }
 
+  .md\:min-w-20{
+    min-width: 20px;
+  }
+
   .md\:min-w-full{
     min-width: 100%;
   }
@@ -81014,6 +81034,10 @@ video {
 
   .md\:bg-gradient-to-tl{
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .md\:bg-hero-pattern{
+    background-image: url('img/endless-constellation.svg');
   }
 
   .md\:from-transparent{
@@ -101499,6 +101523,10 @@ video {
     min-width: 0px;
   }
 
+  .lg\:min-w-20{
+    min-width: 20px;
+  }
+
   .lg\:min-w-full{
     min-width: 100%;
   }
@@ -112421,6 +112449,10 @@ video {
 
   .lg\:bg-gradient-to-tl{
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .lg\:bg-hero-pattern{
+    background-image: url('img/endless-constellation.svg');
   }
 
   .lg\:from-transparent{
@@ -132906,6 +132938,10 @@ video {
     min-width: 0px;
   }
 
+  .xl\:min-w-20{
+    min-width: 20px;
+  }
+
   .xl\:min-w-full{
     min-width: 100%;
   }
@@ -143828,6 +143864,10 @@ video {
 
   .xl\:bg-gradient-to-tl{
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .xl\:bg-hero-pattern{
+    background-image: url('img/endless-constellation.svg');
   }
 
   .xl\:from-transparent{
@@ -164313,6 +164353,10 @@ video {
     min-width: 0px;
   }
 
+  .\32xl\:min-w-20{
+    min-width: 20px;
+  }
+
   .\32xl\:min-w-full{
     min-width: 100%;
   }
@@ -175235,6 +175279,10 @@ video {
 
   .\32xl\:bg-gradient-to-tl{
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:bg-hero-pattern{
+    background-image: url('img/endless-constellation.svg');
   }
 
   .\32xl\:from-transparent{
