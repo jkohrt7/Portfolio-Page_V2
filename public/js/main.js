@@ -12,7 +12,7 @@ function init(){
 function headerFade() {
     positionY = window.scrollY;
     console.log(positionY)
-    if(positionY >= 100) {
+    if(positionY >= 50) {
         document.querySelector("#navbar").classList.remove("bg-opacity-0");
     }
     else {
@@ -20,8 +20,14 @@ function headerFade() {
     }
 }
 
-function ToggleMenu(e) {
-
+function ToggleMenu() {
+    let menu = document.querySelector("#nav-mobile");
+    if(menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden')
+    } 
+    else {
+        menu.classList.add('hidden');
+    }
 }
 
 init();

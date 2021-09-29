@@ -10,7 +10,7 @@
 <body class = "text-black-700 bg-gray-200 font-body">
 
     <!--content wrapper-->
-        <nav id= "navbar" class = "sticky -my-8 pt-2 top-0 z-50 bg-opacity-0 bg-purple-900 transition ease-in duration-100"> 
+        <nav id= "navbar" class = "sticky -my-8 pt-2 top-0 z-50 bg-opacity-0 bg-purple-900 transition ease-in duration-500"> 
             <div class = "px-8 mx-auto"> 
                 <div class = "flex justify-between align-center">     
                     
@@ -24,32 +24,32 @@
                         </a>
                     </div>
                     <!--Primary nav-->
-                    <div class = "hidden text-white text-lg md:flex items-center space-x-6 py-2 px-3">
+                    <div id= "nav-menu" class = "flex hidden text-white text-lg md:flex items-center md:relative space-x-6 py-2 px-3">
                         
-                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800" href="#">About</a>
-                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800" href="#">Portfolio</a>
-                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800" href="#">Contact</a>
-                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800" href="#">Github</a>
+                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800 transition ease-in-out duration-300" href="#about-me">About</a>
+                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800 transition ease-in-out duration-300" href="#portfolio">Portfolio</a>
+                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800 transition ease-in-out duration-300" href="#Contact">Contact</a>
+                        <a class= "border-2 border-white rounded-full px-3 hover:bg-white hover:text-purple-800 transition ease-in-out duration-300" href="img/Resume_2021.docx.pdf">Resume</a>
 
                     </div>
 
                     <!--Mobile nav. TODO: add JS functionality-->
-                    <div id= "hamburger-menu-icon" class = "flex text-white cursor-pointer md:hidden items-center space-x-3 py-2 px-3">
+                    <div id= "hamburger-menu-icon" class = "flex flex-col text-white cursor-pointer md:hidden space-x-3 py-2 px-3">
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
-                    </div>
 
-                    <div id = "mobile-menu" class = "hidden md:hidden">
-                        <a href="#">About</a>
-                        <a href="#">Portfolio</a>
-                        <a href="#">Contact</a>
-                        <a href="#">Github</a>
+                        <div id= "nav-mobile" class = "bg-purple-800 flex hidden flex-col absolute inset-y-0 right-0 w-24 mt-14">
+                            <a class= "border-b-2 border-white px-3 py-2 bg-purple-800" href="#about-me">About</a>
+                            <a class= "border-b-2 border-white px-3 py-2 bg-purple-800" href="#portfolio">Portfolio</a>
+                            <a class= "border-b-2 border-white px-3 py-2 bg-purple-800" href="#Contact">Contact</a>
+                            <a class= "border-b-2 border-white px-3 py-2 bg-purple-800" href="#img/Re">Resume</a>
+                        </div>
                     </div>
-
                 </div>
             </div>
-        </nav> 
+        </nav>
+
 
         <header class = "grid-rows-2 gap-4 bg-hero-pattern text-white py-32">
             <!-- background by SVGBackgrounds.com -->
@@ -60,10 +60,10 @@
         <main class = "flex flex-col justify-center">
 
             <!--About me-->
-            <section id = "about-me" class = "flex flex-col my-12 mx-24 lg:flex-row">
+            <section id = "about-me" class = "flex flex-col my-12 mx-12 md:mx-24 lg:flex-row">
                 <div class = "flex-auto flex-col flex-grow-2 max-w-5xl max-w-xl">
                     <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2">About Me</h1>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, perferendis reprehenderit. Quasi porro ab, consequuntur reprehenderit officia nisi expedita eaque explicabo earum, corrupti amet dignissimos placeat labore pariatur facere. Quasi!</span>
+                    <span class= "mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, perferendis reprehenderit. Quasi porro ab, consequuntur reprehenderit officia nisi expedita eaque explicabo earum, corrupti amet dignissimos placeat labore pariatur facere. Quasi!</span>
                 </div>
 
                 <div id="Skills" class = "flex-auto min-w-max md:max-w-md max-w-xl">
@@ -79,37 +79,46 @@
             </section>
 
             <!--Portfolio-->
-            <section id = "portfolio" class = "flex flex-col my-12 mx-24">
-                <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2 text-center">Portfolio</h1>
+            <section id = "portfolio" class = "flex flex-col my-12 mx-12 md:mx-24">
+                <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2 text-center ">Portfolio</h1>
                 <!--Cards go in this div-->
                 <div id = "Portfolio-cards" class = "flex flex-row flex-wrap justify-center my-12 mx-0 md:mx-16 ">
 
                     <!--Quiz-->
-                    <div class = "rounded-3xl overflow-hidden shadow-md md:mr-12 mb-12">
+                    <div class = "rounded-3xl overflow-hidden shadow-md md:mr-12 mb-12 bg-gray-50">
                         <a href = "https://jkohrt7.github.io/Javascript_Quiz/">
                             <img class = "w-80 h-48 object-cover" src = "img/quiz.png">
-                            <div class = "m-4 font-bold text-center text-xl">
-                                <span>Javascript Quiz</span>
-                            </div>
                         </a>
+                        <div class = "m-4 font-bold text-center text-xl ">
+                            <span>Javascript Quiz</span>
+                            <a href="https://github.com/jkohrt7/Javascript_Quiz">
+                                <img class = "h-11 mx-6 inline" src="img/github.svg" alt="github icon">
+                            </a>
+                        </div>
                     </div>
 
                     <!--Weather-->
-                    <div class = "rounded-3xl overflow-hidden shadow-md md:mr-12 mb-12">
+                    <div class = "rounded-3xl overflow-hidden shadow-md md:mr-12 mb-12 bg-gray-50">
                         <a href = "https://jkohrt7.github.io/Weather-Dashboard/">
                             <img class = "w-80 h-48 object-cover" src = "img/sky.jpg">
                             <div class = "m-4 font-bold text-center text-xl">
                                 <span>OpenWeather App</span>
+                                <a href="https://github.com/jkohrt7/Weather-Dashboard">
+                                    <img class = "h-11 mx-6 inline" src="img/github.svg" alt="github icon">
+                                </a>
                             </div>
                         </a>
                     </div>
 
-                    <!--Travel-->
-                    <div class = "rounded-3xl overflow-hidden shadow-md md:mr-12 mb-12">
+                    <!--Solar System-->
+                    <div class = "rounded-3xl overflow-hidden shadow-md md:mr-12 mb-12 bg-gray-50">
                         <a href = "https://jkohrt7.github.io/THREE.js_Solar-System/">
                             <img class = "w-80 h-48 object-cover" src = "img/solar.jpg">
                             <div class = "m-4 font-bold text-center text-xl">
                                 <span>Solar System</span>
+                                <a href="https://github.com/jkohrt7/THREE.js_Solar-System">
+                                    <img class = "h-11 mx-6 inline" src="img/github.svg" alt="github icon">
+                                </a>
                             </div>
                         </a>
                     </div>
@@ -117,7 +126,7 @@
             </section>
 
             <!--Contact-->
-            <section class = "flex flex-col my-12 mx-24">
+            <!-- <section id= "Contact" class = "flex flex-col my-12 mx-24">
                 <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2 text-center">Contact</h1>
                 <div class = "flex flex-col justify-center md:flex-row ">
                     <div class= "flex justify-center">
@@ -131,11 +140,36 @@
                         <textarea class = "rounded-lg col-span-2 h-28 resize-y p-2" placeholder = "Message"></textarea>
                     </form>
                 </div>
+            </section> -->
+
+            <section id= "Contact" class = "flex flex-col my-12 mx-12 md:mx-24">
+                <h1 class = "text-size text-purple-800 text-3xl border-purple-800 border-b-2 text-center">Contact</h1>
+                <div class = "flex flex-col justify-center md:flex-row ">
+                    <div class= "flex justify-center">
+                        <img class = "text-center rounded-full h-72 p-4 min-w-72px object-cover" src="img/Jared_kohrt_picture.jpg" alt="A picture of Jared--pasty with brown hair and glasses">
+                    </div>
+
+                    <div class = "grid grid-cols-1 items-center">
+                        <div class = flex>
+                            <svg class = "h-8"xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg> 
+                            <h2 class= "sm:text-lg md:text-2xl pl-6">(336) 908-2364</h2>
+                        </div>
+
+                        <div class = flex>
+                            <svg class = "h-8" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <h2 class= "md:text-2xl pl-6">jkohrt7@gmail.com</h2>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
         <footer>
-            <section class = "flex flex-row justify-center align-middle h-16 bg-purple-800 p-2">
+            <section class = "flex flex-row justify-center align-middle h-16 bg-purple-900 p-2">
 
                 <a href="https://github.com/jkohrt7">
                     <img class = "h-11 mx-6" src="img/github.svg" alt="github icon">
