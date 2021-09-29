@@ -6,7 +6,7 @@ The webpage is hosted on github pages and can be viewed here:  https://jkohrt7.g
 
 The page was designed to work on various screen sizes, so try messing with the window size!
 
-![An image of the application](public\img\screenshot.jpg)
+![An image of the application](./public/img/screenshot.jpg)
 
 
 ## Requirements and Installation
